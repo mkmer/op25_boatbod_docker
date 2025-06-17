@@ -10,7 +10,7 @@ RUN apt-get install -y git gnuradio gnuradio-dev gr-osmosdr libusb-1.0-0-dev lib
                        libhackrf-dev libitpp-dev libpcap-dev cmake git swig \
                        build-essential pkg-config doxygen python3-numpy python3-waitress \
                        python3-requests python3-flask python3-pip liborc-dev alsa-utils gnuplot-x11 \
-                       debhelper python3-pyramid libncurses5-dev libncursesw5-dev
+                       debhelper python3-pyramid libncurses5-dev libncursesw5-dev sudo
 
 RUN git clone https://github.com/rtlsdrblog/rtl-sdr-blog && \
                        cd rtl-sdr-blog && \
