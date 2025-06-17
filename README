@@ -1,0 +1,2 @@
+Modify and copy rx.sh into the /config directory mapped in docker-compose.
+Modify docker-compose to point at your favorite config location
