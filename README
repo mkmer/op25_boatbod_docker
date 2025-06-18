@@ -1,2 +1,3 @@
-Modify and copy rx.sh into the /config directory mapped in docker-compose.
-Modify docker-compose to point at your favorite config location
+Modify and copy rx.sh into the `/config` directory mapped in docker-compose.
+Modify `docker-compose.yml` to point at your favorite config location
+Modify `asound.conf` to point at the correct sound card (if required), install in `/config` directory
