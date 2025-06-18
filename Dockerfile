@@ -5,7 +5,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
     export TZ=$TZ && \
     apt-get update && apt-get install -y tzdata apt-utils && \
     dpkg-reconfigure --frontend noninteractive tzdata
-RUN apt-get -y apt-get update && dist-upgrade
+RUN apt-get -y dist-upgrade && apt-get update
 RUN apt-get install -y git gnuradio gnuradio-dev gr-osmosdr libusb-1.0-0-dev libuhd-dev  \
                        libhackrf-dev libitpp-dev libpcap-dev cmake git swig \
                        build-essential pkg-config doxygen python3-numpy python3-waitress \
