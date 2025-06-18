@@ -26,5 +26,4 @@ RUN chmod +x /usr/bin/sudo
 RUN git clone https://github.com/boatbod/op25.git \
     && cd ./op25 \ 
     && ./install.sh
-    
-COPY ./asound.conf /etc/asound.conf
+

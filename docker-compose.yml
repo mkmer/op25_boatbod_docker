@@ -8,13 +8,12 @@ services:
                         - "/dev/bus/usb"
                 volumes:
                         - "/tmp:/tmp"
-                        - "/home/mkasper/op25_config:/config"
-                        - "/home/mkasper/op25_config/mpscs.tsv:/op25/op25/gr-op25_repeater/apps/mpscs.tsv"
-                        - "/home/mkasper/op25_config/suid.tsv:/op25/op25/gr-op25_repeater/apps/suid.tsv"
-                        - "/home/mkasper/op25_config:/home/mkasper/op25_config"
+                        #- "/opt/op25_config/asound.conf:/etc/asound.conf"
+                        - "/opt/op25_config:/config"
+                        - "/opt/op25_config/mpscs.tsv:/op25/op25/gr-op25_repeater/apps/mpscs.tsv"
+                        - "/opt/op25_config/suid.tsv:/op25/op25/gr-op25_repeater/apps/suid.tsv"
 
 #                privileged: true
                 dns: 8.8.8.8
                 restart: unless-stopped
                 entrypoint: /bin/bash /config/rx.sh  
-#                command: --nocrypt --args "rtl" --gains 'LNA:53' -f 856.0375e6 -o 25000 -S 240000 -n -q 0 -d -50 -X -v 5  -w -O plughw:CARD=J370 -T /config/trunk.tsv -l http:0.0.0.0:8888 -U
