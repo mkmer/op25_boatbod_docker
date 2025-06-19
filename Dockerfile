@@ -25,5 +25,6 @@ RUN chmod +x /usr/bin/sudo
 
 RUN git clone https://github.com/boatbod/op25.git \
     && cd ./op25 \ 
+    && git checkout gr310 \
     && ./install.sh
 
